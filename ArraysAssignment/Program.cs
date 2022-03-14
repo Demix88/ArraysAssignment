@@ -27,7 +27,7 @@ class Program
             Console.WriteLine(numArray[indexNum]);
             Console.ReadLine();
         }
-        Console.ReadLine();
+        
 
         string[] stringArray = { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
         Console.WriteLine("\nPlease select an index number from 0 to 8");
@@ -35,7 +35,7 @@ class Program
         if (Convert.ToInt32(Number1) < 8 && Convert.ToInt32(Number1) > 0)
         {
 
-            Number1 = Console.ReadLine();
+            
             int indexNum = Convert.ToInt32(Number);
             Console.WriteLine(stringArray[indexNum]);
 
@@ -47,8 +47,21 @@ class Program
             Number = Console.ReadLine();
             int indexNum = Convert.ToInt32(Number);
             Console.WriteLine(numArray[indexNum]);
-            Console.ReadLine();
+            
         }
+
+        List<string> stringList = new List<string>();
+        stringList.Add("Hello");
+        stringList.Add("Friend");
+        stringList.Add("How");
+        stringList.Add("Are");
+        stringList.Add("You");
+        Console.WriteLine("Please select index Number from 0 To 4");
+        string number2 = Console.ReadLine();
+        int indexNumber = Convert.ToInt32(number2);
+        Console.WriteLine(stringList[indexNumber]);
+        Console.ReadLine();
+
     }
 }
 
